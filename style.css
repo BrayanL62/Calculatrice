@@ -1,0 +1,60 @@
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.calc {
+    display: block;
+    margin: 100px auto;
+    width: 500px;
+    height: 600px;
+    border: 1px solid black;
+}
+
+.calc__screen {
+    position: relative;
+    width: 95%;
+    height: 15%;
+    margin: 2.5%;
+    background-color: #333;
+    font-size: 4.5rem;
+
+}
+
+.calc__number {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.bouton {
+    display: flex;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    width: 90px;
+    height: 80px;
+    margin: 7px 17px;
+    background-color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px black;
+}
+
+.AC {
+    background-color: crimson;
+}
+
+.egal {
+    height: 360px;
+    background-color: rgb(97, 97, 255);
+}
+.blue {
+    color: blue;
+}
