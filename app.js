@@ -1,22 +1,32 @@
-let btn = document.querySelectorAll(".number");
+let screen = document.querySelector(".calc__number");
 function reset() {
-    document.querySelector(".calc__number").innerHTML = "";
-};
-let screen = document.querySelector("p");
-let operator = document.querySelectorAll(".blue");
-// let screen1 = screen.slice(0, -1); 
-let calcul = [];
-
+    screen.innerHTML = "";
+}
 
 addEventListener("click", function(event) {
     let btn = event.target;
     screen.append(btn.textContent);
-    if(btn.textContent === "AC"){
-        reset()
-    }
-    else if(btn.textContent === "+"){
-        calcul.push(screen.textContent.slice(0,-1));
-        console.log(calcul)
+    console.log(screen.textContent);
+    
+    if(btn.textContent == "AC"){
+        console.log(screen.textContent.slice(0, -2));
         reset();
     }
-});
+    if(btn.textContent == "=") {
+        let calcul = [];
+        console.log(screen.textContent.slice(0, -1));
+        calcul.push(screen.textContent.slice(0, -1));
+        console.log(calcul);
+        reset();
+        screen.append(eval(calcul[0]));
+        calcul.pop();
+    }
+    // if(btn.textContent == "+"){
+    //     console.log(screen.textContent.slice(0, -1));
+    //     calcul.push(Number(screen.textContent.slice(0, -1)));
+    //     reset();
+    //     console.log(calcul);
+    // }
+    
+
+})
