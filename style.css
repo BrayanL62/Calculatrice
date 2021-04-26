@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #000;
+}
+
 .calc {
     display: block;
     margin: 100px auto;
@@ -21,6 +25,7 @@
     font-size: 3rem;
     text-align: right;
     color: white;
+    overflow: hidden;
 
 }
 
