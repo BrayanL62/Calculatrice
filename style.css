@@ -8,11 +8,18 @@ body {
     background-color: #f1f1f1;
 }
 
+h1 {
+    text-align: center;
+    margin: 20px auto;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
 .calc {
     display: block;
     margin: 100px auto;
-    width: 500px;
-    height: 600px;
+    width: 300px;
+    height: 400px;
     border: 1px solid black;
 }
 
@@ -45,13 +52,24 @@ body {
 }
 
 button {
-    width: 90px;
-    height: 80px;
-    margin: 7px 17px;
+    position: relative;
+    width: 50px;
+    height: 40px;
+    margin: 7px 12px;
     background-color: white;
     border-radius: 5px;
     cursor: pointer;
     box-shadow: 2px 2px 2px black;
+}
+
+button:hover{
+    top: 2px;
+    box-shadow: 1px 1px 2px black;
+
+}
+
+button:hover{
+    top: 3px;
 }
 
 .AC {
@@ -60,9 +78,29 @@ button {
 }
 
 .egal {
-    height: 360px;
+    height: 200px;
     background-color: rgb(97, 97, 255);
 }
 .blue {
     color: blue;
+}
+
+.dark {
+    text-align: center;
+}
+
+/* Dark Mode de la Calculatrice */
+
+.body_dark {
+    background-color: #000;
+    color: #f1f1f1;
+}
+
+.calc_dark {
+    background-color: #662b2b;
+}
+
+.dark_number {
+    background-color: #333;
+    color: #f1f1f1;
 }
